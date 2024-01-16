@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+	<!-- <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no"> -->
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<meta name="color-scheme" content="light dark">
+	<link rel="stylesheet" href="css/app.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<title>MymobileCV</title>
+</head>
+
+<body>
+	<!--- hero section start-->
+	<header>
+		<div id="hero" class="hero">
+			<div class="app-page" data-page="home">
+				<div class="app-topbar">
+					<div class="app-title">Mobile App</div>
+				</div>
+				<div class="app-content">
+					<div class="app-section">
+						<div class="app-button" data-target="page2">Home</div>
+					</div>
+					<div class="app-content">
+						<div class="app-section">
+							<div class="app-button" data-target="page3">About Page</div>
+						</div>
+						<div class="app-content">
+							<div class="app-section">
+								<div class="app-button" data-target="page4">Services Page</div>
+							</div>
+							<div class="app-section">
+								<div class="app-button" data-target="page5">Contact Page </div>
+							</div>
+						</div>
+					</div>
+
+					<div class="app-page" data-page="page2">
+						<div class="app-topbar">
+							<div class="app-button left" data-back data-autotitle></div>
+							<div class="app-title">Home</div>
+						</div>
+						<div class="app-content">
+							<div class="content">
+								<h4>Hello,my name is</h4>
+								<h1>Racheal <span>Oyebamiji</span></h1>
+								<h3>I am a Web Developer.</h3>
+								<div class="newsletter">
+									<form>
+										<input type="email" name="email" id="mail" placeholder="Enter Your Email">
+										<input type="submit" name="submit" value="Lets Start">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+	</header>
+
+	<!-- About Section Start -->
+	<div class="app-page" data-page="page3">
+		<div class="app-topbar">
+			<div class="app-button left" data-back data-autotitle></div>
+			<div class="app-title">About Page</div>
+		</div>
+		<div class="app-content">
+			<section id="about" class="About">
+				<div class="main">
+					<img src="img/abt.png">
+					<div class="about-text">
+						<h2>About Me</h2>
+
+						<h5>Developer <span>& Designer</span></h5>
+						<p>I possess proficiency in HTML, CSS, and Bootstrap, with a moderate familiarity with
+							JavaScript and a
+							basic grasp of React.js. As a recent graduate, I'm enthusiastic about entering the tech
+							industry and
+							obtaining practical experience in web development. I am dedicated to ongoing learning and
+							skill
+							improvement, aiming to contribute positively to a dynamic team.</p>
+						<button type="button">Let's Talk</button>
+					</div>
+			</section>
+		</div>
+	</div>
+
+
+	<!--service section start-->
+	<div class="app-page" data-page="page4">
+		<div class="app-topbar">
+			<div class="app-button left" data-back data-autotitle></div>
+			<div class="app-title">Services Page</div>
+		</div>
+		<div class="app-content">
+			<div id="service" class="service">
+				<div class="title">
+					<h2>Our Services</h2>
+				</div>
+
+				<div class="box">
+					<div class="card">
+						<i class="fa-solid fa-bars"></i>
+						<h5>SKills</h5>
+						<div class="pra">
+							<ul>
+								<li>Proficient in HTML , CSS and JavaScript</li>
+								<li>communication and collaboration skills</li>
+								<li>Basic knowledge in React JS</li>
+								<li>Interpersonal skills</li>
+								<li>Time Managements</li>
+
+							</ul>
+
+							<p style="text-align: center; ">
+								<a class="button" href="#">Read More</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<i class="fa-solid fa-bell"></i>
+						<h5>Tools & Software</h5>
+						<div class="pra">
+							<ul>
+								<li>Visual Studio code</li>
+								<li>Figma</li>
+								<li>Github</li>
+								<li>Canva</li>
+								<li>Wordpress</li>
+							</ul>
+
+							<p style="text-align: center; ">
+								<a class="button" href="#">Read More</a>
+							</p>
+						</div>
+					</div>
+
+					<div class="card">
+						<i class="fa-solid fa-user"></i>
+						<h5>Languages</h5>
+						<div class="pra">
+							<ul>
+								<li>English</li>
+								<li>Yoruba</li>
+							</ul>
+
+							<p style="text-align: center; ">
+								<a class="button" href="#">Read More</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- ----Contact Me ---->
+	<div class="app-page" data-page="page5">
+		<div class="app-topbar">
+			<div class="app-button left" data-back data-autotitle></div>
+			<div class="app-title">Contact Page</div>
+		</div>
+		<div class="app-content">
+			<section class="contact">
+
+				<h2 style="text-align: center; margin:70px auto; font-size: 2.5rem;">Contact Me</h2>
+				<div class="main-cont">
+					<img src="img/cont.png" alt="" style="width: 430px; height: auto; border-radius: 13px;">
+
+					<!-- <span class="line"></span>
+				<div class="contact-info">
+					<div class="contct">
+						<i class="fa-solid fa-location-dot"></i>
+						<p>Ibadan,Oyo State. Nigeria</p>
+					</div>
+					<div class="contct">
+						<i class="fa-solid fa-phone"></i>
+						<p>+23487878022</p>
+					</div>
+					<div class="contct"> 
+						<i class="fa-solid fa-envelope"></i>
+						<p>rachealeniola92@gmail.com</p>
+					</div> -->
+					<div class="column">
+						<P style="color: aliceblue;">Please Fill in the Form</P>
+						<form action="/action_page.php">
+							<label for="fname">First Name</label>
+							<input type="text" id="fname" name="firstname" placeholder="Your name..">
+							<label for="email">Email</label>
+							<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+							<label for="country">Country</label>
+							<select id="country" name="country">
+								<option value="australia">Nigeria</option>
+								<option value="canada">Canada</option>
+								<option value="usa">UK</option>
+							</select>
+							<label for="subject">Subject</label>
+							<textarea id="subject" name="subject" placeholder="Write something.."
+								style="height:170px"></textarea>
+							<button type="button">Submit</button>
+						</form>
+					</div>
+				</div>
+		</div>
+
+		</section>
+	</div>
+	</div>
+	<div class="cameraplugin">
+		<h1>Camera</h1>
+		<button onclick="takePicture()">Take Picture</button>
+		<img id="imagePreview" style="max-width:100%;max-height:300px;margin-top:20px;" />
+	</div>
+
+
+	<div class="locationplugin">
+		<h1>Geolocation</h1>
+		<button onclick="getCurrentLocation()">Get Current Location</button>
+		<p id="location"></p>
+	</div>
+
+
+
+	<script src="cordova.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/app.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>
